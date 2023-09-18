@@ -28,5 +28,5 @@ jobs:
 
       - name: Upload to S3
         run: |
-          aws s3 sync /path/to/your/djangoapp s3://website124  # Update the source path and S3 bucket name accordingly
+          aws s3 sync . s3://website124  --delete  # Update the source path and S3 bucket name accordingly
 
